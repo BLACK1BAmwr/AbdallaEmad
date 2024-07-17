@@ -248,6 +248,14 @@ input.btn:hover {
 	 	border-left: 3px solid var(--main);
 	 }
 }
+@media only screen and (max-width: 767px) {
+	
+.typing span::before {
+    content: 'Developer';
+    color: var(--main);
+    animation: wordss 20s infinite;
+}
+}
 @keyframes words {
 	0% , 20% {
 		content: 'Frontend';
@@ -260,6 +268,28 @@ input.btn:hover {
 	}
 	61% , 80% {
 		content: 'Anime Designer';
+	}
+	81% , 87% {
+		content: 'Editor';
+	}
+}
+@keyframes wordss {
+	0% , 20% {
+		content: 'Frontend';
+	}
+	21% , 40% {
+		content: 'Python Developer';
+		font-size: 24px;
+	}
+	41% , 60% {
+		content: 'Graphic designer';
+     	font-size: 24px;
+
+	}
+	61% , 80% {
+		content: 'Anime Designer';
+		font-size: 24px;
+
 	}
 	81% , 87% {
 		content: 'Editor';
@@ -392,11 +422,6 @@ input.btn:hover {
 	margin-bottom: 20px;
 	margin-top: 47% ;
 }
-@media only screen and (max-width: 767px) {
- .service-container {
-  gap: 200px;
- }
-}
 
 .skills {
 	background-image: url(https://i.pinimg.com/564x/79/5c/27/795c273cdbeb7e6e01ce037ed5ab7e36.jpg);
@@ -454,7 +479,7 @@ input.btn:hover {
 }
 @media only screen and (max-width: 767px) {
 	.skills .container {
-	width: 80%;
+	width: 90%;
 
 }
  .skills .container .row {
@@ -463,16 +488,24 @@ input.btn:hover {
 	flex-wrap: wrap;
 	gap: 1rem;
 }
+
 .bar .info span {
 	font-size: 1rem;
 	font-weight: 500;
-	margin-left: 0.2rem;
 }
  .bar .info i {
 	font-size: 3rem;
 	 cursor: pointer;
 
 }
+.skills .container .bar .info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+	margin-top: 1rem;
+	width: 85px;
+	}
 }
 
 #html {
