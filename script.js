@@ -14,3 +14,7 @@ let wordIndex = 0;
 let letterIndex = 0;
 let currentWord = words[wordIndex];
 let isDeleting = false;
+
+window.onload = function() {
+    document.querySelector('svg').style.visibility = 'visible';
+  };
