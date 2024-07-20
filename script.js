@@ -15,6 +15,15 @@ let letterIndex = 0;
 let currentWord = words[wordIndex];
 let isDeleting = false;
 
-window.onload = function() {
-    document.querySelector('svg').style.visibility = 'visible';
-  };
+function dshowElement() {
+        var element = document.getElementById("myElement");
+        element.style.display = "none";
+        setTimeout(function() {
+            element.style.display = "block";
+        }, 3000); // 3000 milliseconds = 3 seconds
+    }
+
+    // Call showElement function when the page loads
+    window.onload = function() {
+        dshowElement();
+    };
